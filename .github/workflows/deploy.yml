@@ -17,7 +17,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git checkout -b gh-pages
           rm -rf *
-          cp -r $GITHUB_WORKSPACE/* .
+          cp -r . .
           touch .nojekyll
           git add .
           git commit -m "Deploy to GitHub Pages"
