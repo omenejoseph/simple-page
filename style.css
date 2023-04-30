@@ -37,3 +37,17 @@
   height: 50px;
   margin-right: 10px;
 }
+
+#founders {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.founder {
+  display: flex;
+  margin: 20px 0;
+}
+
+.founder p {
+  margin: 0;
+}
