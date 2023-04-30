@@ -1,4 +1,4 @@
-name: Deploy Daib Branches
+name: Deploy Daib Branches 
 
 on:
   push:
