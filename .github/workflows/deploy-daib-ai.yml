@@ -24,12 +24,12 @@ jobs:
           echo "https://$USER:$TOKEN@github.com" > $HOME/.git-credentials
           git fetch origin
           git checkout gh-pages || git checkout -b gh-pages
-          git reset --hard origin/main
+          git reset --hard origin/master
           git push -f origin gh-pages
           git checkout ${{ github.ref_name }}
         env:
           USER: "github-actions[bot]"
-          TOKEN: ${{ secrets.PAT }}         
+          TOKEN: ${{ secrets.PAT }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
